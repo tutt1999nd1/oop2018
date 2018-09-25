@@ -163,6 +163,7 @@ class fan {
             else if (this.age==20)System.out.println("sinh vien nam ba");
             else if (this.age==21)System.out.println("sinh vien nam tu");
         }
+        //main
         public static void main(String[]argc){
             SinhVien sv1= new SinhVien("a",19,"nam","hanoi");
             System.out.println(sv1.NoithanhHanoi());
