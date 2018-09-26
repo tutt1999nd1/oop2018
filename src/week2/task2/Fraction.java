@@ -65,17 +65,16 @@ public class Fraction {
     }
     public boolean equals(Object obj)
     {
-        Fraction a = (Fraction) obj;
-        return (ts*a.ms > a.ts*ms);
+
+        return (((Fraction) obj).ts*this.ms == this.ts*((Fraction) obj).ms);
     }
     public static void main(String [] argc){
         Fraction ps= new Fraction(1,6);
         Fraction ps1= new Fraction(2, 6);
         Fraction ps2= ps.add(ps1);
         System.out.println(ps2.getTs()+"/"+ps2.getMs());
-        Fraction c = new Fraction(10,3);
-        Fraction d = new Fraction(5,3);
-        if(d.equals(c)) System.out.println("true");
-        else System.out.println("false");
+
+         System.out.println(ps.equals(ps1));
+
     }
 }
