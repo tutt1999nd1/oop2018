@@ -1,6 +1,11 @@
 package week1;
+
 public class Student {
+
+    // TODO: khai báo các thuộc tính cho Student
     private String name ,id ,group ,email;
+
+    // TODO: khai báo các phương thức getter, setter cho Student
     public void setName(String name1){
         this.name = name1;}
     public String getName(){
@@ -20,7 +25,8 @@ public class Student {
     /**
      * Constructor 1
      */
-    public Student() {
+    Student() {
+        // TODO:
         name="Student";
         id="000";
         group="INT22041";
@@ -33,7 +39,7 @@ public class Student {
      * @param sid
      * @param em
      */
-    public Student(String n, String sid, String em) {
+    Student(String n, String sid, String em) {
         // TODO:
         name=n;
         id=sid;
@@ -45,7 +51,8 @@ public class Student {
      * Constructor 3
      * @param s
      */
-    public Student(Student s) {
+    Student(Student s) {
+        // TODO:
         name=s.getName();
         id=s.getId();
         email=s.getEmail();
@@ -62,7 +69,6 @@ public class Student {
 
         System.out.println("Email:" +email + "\n");
 
+
     }
-
 }
-

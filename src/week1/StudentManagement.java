@@ -1,10 +1,16 @@
 package week1;
+
 public class StudentManagement {
+
+    // TODO: khai báo thuộc tính students là array chứa các đối tượng thuộc lớp Student (max. 100)
     private Student[] students= new Student[100];
 
     int count=0;
+    public static boolean  sameGroup(Student s1, Student s2) {
+        // TODO:
+        return (s1.getGroup()).equals(s2.getGroup());
 
-
+    }
     public void addsv(Student sv){
         students[count++]=sv;
     }
@@ -15,12 +21,8 @@ public class StudentManagement {
         }
 
     }
-    public static boolean sameGroup(Student s1, Student s2) {
+    void studentsByGroup() {
         // TODO:
-        return (s1.getGroup()).equals(s2.getGroup());
-    }
-
-    public void studentsByGroup() {
         String[] group = new String[100];
         int i,j,length=0;
         for (i=0;i<count;i++) {
@@ -39,7 +41,9 @@ public class StudentManagement {
             }
         }
     }
-    void removeStudent(String id){
+
+    void removeStudent(String id) {
+        // TODO:
         for (int i = 0; i < count; i++) {
             if (students[i].getId() == id) {
                 for (int j = i; j < count-1 ; j++) {
@@ -92,4 +96,5 @@ public class StudentManagement {
 
 
     }
-}
+    }
+
