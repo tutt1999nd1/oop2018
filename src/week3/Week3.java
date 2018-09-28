@@ -37,6 +37,4 @@ public class Week3 {
         return "Béo phì";
     }
 }
-
-
-//Test pull github
+//Test git
