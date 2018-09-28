@@ -1,5 +1,5 @@
 package week3;
-<<<<<<< HEAD
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 public class Week3Test {
@@ -36,14 +36,4 @@ public class Week3Test {
         assertEquals("Thừa cân", Week3.calculateBMI(69.12, 1.7));
         assertEquals("Béo phì", Week3.calculateBMI(80, 1.2));
     }
-=======
-
-public class Week3Test {
-
-    // TODO: Viết 5 testcase cho phương thức max()
-
-    // TODO: Viết 5 testcase cho phương thức minOfArray()
-
-    // TODO: Viết 5 testcase cho phương thức calculateBMI()
->>>>>>> upstream/master
 }
