@@ -12,8 +12,6 @@ public class Week3Test {
         assertEquals(1000, Week3.max(-1000, 1000));
         assertEquals(0, Week3.max(-4, 0));
     }
-
-
     // TODO: Viết 5 testcase cho phương thức minOfArray()
     @Test
     public void testMinOfArray() {
@@ -28,7 +26,6 @@ public class Week3Test {
         int e[] = {1, 3, 5, 7, 10000};
         assertEquals(1, Week3.minOfArray(e));
     }
-
     // TODO: Viết 5 testcase cho phương thức calculateBMI()
     @Test
     public void testcalculateBMI(){

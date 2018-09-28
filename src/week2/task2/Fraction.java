@@ -3,13 +3,14 @@ package week2.task2;
 import static week2.task1.Task1.gcd;
 public class Fraction {
 
+    // TODO: khai báo các thuộc tính
     private int numerator, denominator;
-    public Fraction(int numerator, int denominator) {
 
+    public Fraction(int numerator, int denominator) {
+        // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
         this.numerator=numerator;
         this.denominator=denominator;
     }
-
     public int getTs() {
         return numerator;
     }
@@ -22,14 +23,13 @@ public class Fraction {
     public void setMs(int y){
         denominator=y;
     }
-
     public void toiGianPhanSo() {
         int i = gcd(this.getTs(), this.getMs());
         this.setTs(this.getTs() / i);
         this.setMs(this.getMs() / i);
     }
-
     public Fraction add(Fraction other) {
+        // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
 
         int numerator,denominator;
         numerator=this.getTs()*other.getMs()+this.getMs()*other.getTs();
@@ -38,7 +38,9 @@ public class Fraction {
         tong.toiGianPhanSo();
         return tong;
     }
+
     public Fraction subtract(Fraction other) {
+        // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
 
         int numerator,denominator;
         numerator=this.getTs()*other.getMs()-this.getMs()*other.getTs();
@@ -47,6 +49,7 @@ public class Fraction {
         hieu.toiGianPhanSo();
         return hieu;
     }
+
     public Fraction multiply(Fraction other) {
         int numerator,denominator;
         numerator=this.getTs()*other.getTs();
@@ -55,6 +58,7 @@ public class Fraction {
         tich.toiGianPhanSo();
         return tich;
     }
+
     public Fraction divide(Fraction other) {
         int numerator,denominator;
         numerator=this.getTs()*other.getMs();
@@ -67,14 +71,5 @@ public class Fraction {
     {
 
         return (((Fraction) obj).numerator*this.denominator == this.numerator*((Fraction) obj).denominator);
-    }
-    public static void main(String [] argc){
-        Fraction ps= new Fraction(1,6);
-        Fraction ps1= new Fraction(2, 6);
-        Fraction ps2= ps.add(ps1);
-        System.out.println(ps2.getTs()+"/"+ps2.getMs());
-
-        System.out.println(ps.equals(ps1));
-
     }
 }

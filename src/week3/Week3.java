@@ -9,12 +9,9 @@ public class Week3 {
 
         return n;
     }
-    public static void main(String[]a){
-        System.out.println(max(2,4));
-    }
 
     public static int minOfArray(int[] array) {
-        // TODO: Tìm giá trị nhỏ nhất của của một mảng số nguyên (kích thước mảng <= 100 phần tử);int min;
+        // TODO: Tìm giá trị nhỏ nhất của của một mảng số nguyên (kích thước mảng <= 100 phần tử)
         int min=array[0];
         for(int i=0;i<array.length;i++){
             if(array[i]<min)min=array[i];
