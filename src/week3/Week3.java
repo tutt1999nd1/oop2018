@@ -13,7 +13,7 @@ public class Week3 {
         System.out.println(max(2,4));
     }
 
-   public static int minOfArray(int[] array) {
+    public static int minOfArray(int[] array) {
         // TODO: Tìm giá trị nhỏ nhất của của một mảng số nguyên (kích thước mảng <= 100 phần tử);int min;
         int min=array[0];
         for(int i=0;i<array.length;i++){

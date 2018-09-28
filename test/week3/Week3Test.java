@@ -30,7 +30,7 @@ public class Week3Test {
     }
 
     // TODO: Viết 5 testcase cho phương thức calculateBMI()
- @Test
+    @Test
     public void testcalculateBMI(){
         assertEquals("Thiếu cân", Week3.calculateBMI(40, 1.7));
         assertEquals("Béo phì", Week3.calculateBMI(100, 1.5));
