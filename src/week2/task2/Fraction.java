@@ -1,5 +1,6 @@
 package week2.task2;
 
+<<<<<<< HEAD
 import static week2.task1.Task1.gcd;
 public class Fraction {
 
@@ -37,10 +38,24 @@ public class Fraction {
         Fraction tong= new Fraction(numerator,denominator);
         tong.toiGianPhanSo();
         return tong;
+=======
+public class Fraction {
+
+    // TODO: khai báo các thuộc tính
+
+    public Fraction(int numerator, int denominator) {
+        // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
+    }
+
+    public Fraction add(Fraction other) {
+        // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
+        return null;
+>>>>>>> upstream/master
     }
 
     public Fraction subtract(Fraction other) {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
+<<<<<<< HEAD
 
         int numerator,denominator;
         numerator=this.getTs()*other.getMs()-this.getMs()*other.getTs();
@@ -71,5 +86,18 @@ public class Fraction {
     {
 
         return (((Fraction) obj).numerator*this.denominator == this.numerator*((Fraction) obj).denominator);
+=======
+        return null;
+    }
+
+    public Fraction multiply(Fraction other) {
+        // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
+        return null;
+    }
+
+    public Fraction divide(Fraction other) {
+        // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
+        return null;
+>>>>>>> upstream/master
     }
 }
