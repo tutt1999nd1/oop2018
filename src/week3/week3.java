@@ -6,7 +6,6 @@ public class Week3 {
         // TODO: Tìm giá trị lớn nhất của hai số nguyên, giá trị trả về của hàm là số lớn nhất
 
         if(m>n)return m;
-
         return n;
     }
 
