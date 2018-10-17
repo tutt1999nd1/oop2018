@@ -1,11 +1,14 @@
-package week4.task2;
+package week5_6;
+
+import java.awt.*;
 
 /**
  * class Rectangle kế thừa 2 thuộc tính của Shape và thêm 2 thuộc tính width và length
- * @see week4.task2.Shape
+ * @see Shape
  * @author Truong Thanh Tu
  */
 public class Rectangle extends Shape {
+    private Point pointcenter;
     private double width = 1.0;
     private  double  length = 1.0;
 
@@ -16,10 +19,11 @@ public class Rectangle extends Shape {
      * @param width
      * @param length
      */
-    public Rectangle(String color, boolean filled, double width, double length) {
+    public Rectangle(String color, boolean filled, double width, double length,Point pointcenter) {
         super(color, filled);
         this.width = width;
         this.length = length;
+        this.pointcenter=pointcenter;
     }
 
     /**
@@ -38,8 +42,6 @@ public class Rectangle extends Shape {
     public Rectangle() {
     }
 
-
-
     public double getWidth() {
         return width;
     }
@@ -56,6 +58,14 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
+    public void setPointcenter(Point pointcenter) {
+        this.pointcenter = pointcenter;
+    }
+
+    public Point getPointcenter() {
+        return pointcenter;
+    }
+
     public double getArea(){
         return length*width;
     }
@@ -68,12 +78,8 @@ public class Rectangle extends Shape {
      * @return  thông tin
      */
     public String toString(){
-        return getColor()+" " +length+" "+ width +" "+getArea()+" "+getPerimeter();
+        return "rec tangle Pointcenter "+pointcenter;
     }
 
-    public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle();
-        System.out.println(rectangle.toString());
-    }
 }
 

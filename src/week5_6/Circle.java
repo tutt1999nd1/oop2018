@@ -1,8 +1,8 @@
-package week4.task2;
+package week5_6;
 
 /**
  * class Circle kế thừa thuộc tính của Shape và thêm 1 thuộc tính radius
- * @see week4.task2.Shape
+ * @see Shape
  */
 public class Circle extends Shape {
     final double PI = Math.PI;
@@ -12,13 +12,13 @@ public class Circle extends Shape {
         super(color, filled);
         this.radius = radius;
     }
+
     public Circle() {
     }
 
     public Circle(double radius) {
         this.radius = radius;
     }
-
 
 
     public double getRadius() {
@@ -29,24 +29,21 @@ public class Circle extends Shape {
         this.radius = ras;
     }
 
-    public double getArea(){
-        return radius*radius*PI;
+    public double getArea() {
+        return radius * radius * PI;
     }
 
-    public double getPerimeter(){
-        return 2*radius*PI;
+    public double getPerimeter() {
+        return 2 * radius * PI;
     }
 
     /**
      * in ra thông tin
+     *
      * @return thông tin
      */
-    public String toString(){
-        return getColor()+" Radius: " +radius +" Area:"+getArea()+" Perimeter: "+getPerimeter();
-    }
+    public String toString() {
+        return "Circle : point=null";
+    };
 
-public static void main(String []a){
-        Circle circle= new Circle(2);
-    System.out.println(circle.toString());
-}
 }

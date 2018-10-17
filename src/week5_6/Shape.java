@@ -1,9 +1,9 @@
-package week4.task2;
+package week5_6;
 
 /**
- * Clas Shape có 2 thuộc tính color và filles
- * @author Truong Thanh Tu
- */
+        * Clas Shape có 2 thuộc tính color và filles
+        * @author Truong Thanh Tu
+        */
 public class Shape {
     private String color = "red";
     private boolean filled = true;

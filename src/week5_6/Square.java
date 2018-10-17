@@ -1,4 +1,7 @@
-package week4.task2;
+package week5_6;
+
+
+import java.awt.*;
 
 /**
  * class Square kế thừa 2 thuộc tính của Shape và thêm 1 thuộc tính side
@@ -6,9 +9,11 @@ package week4.task2;
  */
 public class Square extends Rectangle {
     private double side;
-    public Square(String color, boolean filled, double side) {
-        super(color, filled);
+    private Point pointcenter;
+    public Square(String color, boolean filled, double side, Point pointcenter) {
+        super();
         this.side = side;
+        this.pointcenter=pointcenter;
     }
 
     public Square() {
@@ -23,6 +28,16 @@ public class Square extends Rectangle {
 
     public void setSide(double side) {
         this.side= side;
+    }
+
+    @Override
+    public Point getPointcenter() {
+        return pointcenter;
+    }
+
+    @Override
+    public void setPointcenter(Point pointcenter) {
+        this.pointcenter = pointcenter;
     }
 
     @Override
@@ -54,7 +69,8 @@ public class Square extends Rectangle {
     }
     public static void main(String[] a){
         Square square= new Square(3);
-    System.out.println(square.toString());
+        System.out.println(square.toString());
 
+    }
 }
-}
+
