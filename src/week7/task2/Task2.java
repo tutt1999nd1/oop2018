@@ -43,7 +43,7 @@ class ArithmeticExceptiontest {
     public static void ArithmaticException(double a, double b) {
         if (b != 0)
             System.out.println(a / b);
-        else throw new ArithmeticException("Lỗi chia cho 0");
+//         throw new ArithmeticException("Lỗi chia cho 0");
     }
 
     public static void main(String[] argc) {
