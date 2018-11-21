@@ -53,5 +53,11 @@ public class Utils {
         } return  new File(d);
 
     }
+    public static  int a;
+    public void m(  ){
+        int b=a;
+    }
+
 
 }
+
